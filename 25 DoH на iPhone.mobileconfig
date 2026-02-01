@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+
+        <!-- 1. Google (FL) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.google</string>
+            <key>PayloadUUID</key>
+            <string>8b3f1c42-9d6a-4e7c-a1b2-3f4e5d6c7a01</string>
+            <key>PayloadDisplayName</key>
+            <string>Google (FL)</string>
+            <key>PayloadDescription</key>
+            <string>Удобный, быстрый, логирует запросы, менее приватный</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+    <string>8.8.8.8</string>
+    <string>8.8.4.4</string>
+        <string>2001:4860:4860::8888</string>
+    <string>2001:4860:4860::8844</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://dns.google/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 2. OpenDNS -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.opendns</string>
+            <key>PayloadUUID</key>
+            <string>2a7d9e14-5c3b-4f28-9a61-bc3e5d7f1023</string>
+            <key>PayloadDisplayName</key>
+            <string>OpenDNS (DE)</string>
+            <key>PayloadDescription</key>
+            <string>Коммерческий, логирование есть, меньше приватности</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>208.67.222.222</string>
+                    <string>208.67.220.220</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://doh.opendns.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 3. NextDNS -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.nextdns</string>
+            <key>PayloadUUID</key>
+            <string>6f1c8e3a-2b74-4d9f-8a05-1e3c7b9d4a56</string>
+            <key>PayloadDisplayName</key>
+            <string>NextDNS (RU)</string>
+            <key>PayloadDescription</key>
+            <string>Конфиденциальный, фильтры по желанию, логирование по выбору пользователя</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+            <string>45.90.28.0</string>
+            <string>45.90.30.0</string>
+            <string>2a07:a8c0::</string>
+            <string>2a07:a8c1::</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://dns.nextdns.io/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 4. Cloudflare DoH/DoT (FL) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.cloudflare1111</string>
+            <key>PayloadUUID</key>
+            <string>0c7a2b5e-1d9f-4a63-b8e1-5f3c9d2a6e74</string>
+            <key>PayloadDisplayName</key>
+            <string>Cloudflare DoH/DoT (FL)</string>
+            <key>PayloadDescription</key>
+            <string>Быстрый, минимальные логи</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>1.1.1.1</string>
+                    <string>1.0.0.1</string>
+                    <string>2606:4700:4700::1111</string>
+                    <string>2606:4700:4700::1001</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://1dot1dot1dot1.cloudflare-dns.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 5. Cloudflare DoH (FL) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.cloudflare-dnscom</string>
+            <key>PayloadUUID</key>
+            <string>a4e9d2b6-7c15-4f3a-8e01-9b5d6c2f7134</string>
+            <key>PayloadDisplayName</key>
+            <string>Cloudflare (FL)</string>
+            <key>PayloadDescription</key>
+            <string>Стандартный DoH Cloudflare</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+<string>1.1.1.1</string>
+<string>1.0.0.1</string>
+<string>2606:4700:4700::1111</string>
+<string>2606:4700:4700::1001</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://cloudflare-dns.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 6. Cloudflare odoh (FL) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.cloudflareodoh</string>
+            <key>PayloadUUID</key>
+            <string>9e5a1c7d-3b64-4f28-ae90-2c6d8b147f35</string>
+            <key>PayloadDisplayName</key>
+            <string>Cloudflare odoh (FL)</string>
+            <key>PayloadDescription</key>
+            <string>Обфусцированный DoH для анонимности</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>1.1.1.1</string>
+                    <string>2606:4700:4700::1111</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://odoh.cloudflare-dns.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 7. RethinkDNS -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.rethinkdns</string>
+            <key>PayloadUUID</key>
+            <string>1d6f3a9b-8c54-4e21-a705-2f7c5b9e0d34</string>
+            <key>PayloadDisplayName</key>
+            <string>RethinkDNS (PL)</string>
+            <key>PayloadDescription</key>
+            <string>Приватный, блокировка трекеров и рекламы</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://basic.rethinkdns.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 8. Digitale-Gesellschaft 1 (Private) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.digitale1</string>
+            <key>PayloadUUID</key>
+            <string>5c2b7d6e-4a9f-41e3-8d05-9b1c3f7a6452</string>
+            <key>PayloadDisplayName</key>
+            <string>Dig-Ges (CH, Private)</string>
+            <key>PayloadDescription</key>
+            <string>Европейский приватный DNS, минимальные логи</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>145.239.2.2</string>
+    <string>185.95.218.42</string>
+    <string>185.95.218.43</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://dns.digitale-gesellschaft.ch/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 9. Digitale-Gesellschaft.2 (Private) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.digitale2</string>
+            <key>PayloadUUID</key>
+            <string>3f7a9d1c-6e25-4b84-a0d5-2c8e5b741369</string>
+            <key>PayloadDisplayName</key>
+            <string>Dig-Ges 2 (CH, Private)</string>
+            <key>PayloadDescription</key>
+            <string>Запасной сервер, минимальные логи</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://dns2.digitale-gesellschaft.ch/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 10. LibreDNS (Private) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.libredns</string>
+            <key>PayloadUUID</key>
+            <string>e2b7c8a4-9f35-4d61-a150-6c3b7d1e5289</string>
+            <key>PayloadDisplayName</key>
+            <string>LibreDNS (DE, Private)</string>
+            <key>PayloadDescription</key>
+            <string>Приватный, ориентирован на свободу и конфиденциальность</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://doh.libredns.gr/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 11. UncensoredDNS (Private) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.uncensoreddns</string>
+            <key>PayloadUUID</key>
+            <string>7d9e4a3b-1f62-48c5-ae07-5c2b6d8f9314</string>
+            <key>PayloadDisplayName</key>
+            <string>Uncensored (DK, Private)</string>
+            <key>PayloadDescription</key>
+            <string>Приватный, не цензурирует, минимальные логи</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://anycast.uncensoreddns.org/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 12. Quad9 (Private, SE, EG) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.quad9</string>
+            <key>PayloadUUID</key>
+            <string>4c1a7e6d-9b25-4f83-8a0e-2d3b5c961748</string>
+            <key>PayloadDisplayName</key>
+            <string>Quad9 (Private SE, EG)</string>
+            <key>PayloadDescription</key>
+            <string>Очень приватный, блокировка угроз, минимальные логи</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+    <string>9.9.9.9</string>
+    <string>149.112.112.112</string>
+    <string>2620:fe::fe</string>
+    <string>2620:fe::9</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://dns.quad9.net/dns-query</string>
+            </dict>
+        </dict>
+
+
+        <!-- 13. Doh.sb (DE)-->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.safebrowsing</string>
+            <key>PayloadUUID</key>
+            <string>1f9c7b6e-5a4d-41e8-8023-6d2b9c4a7f15</string>
+            <key>PayloadDisplayName</key>
+            <string>Doh.sb (DE)</string>
+            <key>PayloadDescription</key>
+            <string>Блокировка вредоносных сайтов, частично приватный</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://doh.sb/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 14. (GPT, RU) Comss.one -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.comssone</string>
+            <key>PayloadUUID</key>
+            <string>8a2d9c4b-7f15-4e36-a0c1-5b6e3d917428</string>
+            <key>PayloadDisplayName</key>
+            <string>(GPT, RU) Comss.one</string>
+            <key>PayloadDescription</key>
+            <string>Публичный бесплатный DoH с обходом некоторых блокировок</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>212.109.195.93</string>
+                    <string>83.220.169.155</string>
+                    <string>185.250.151.50</string>
+                    <string>185.250.151.51</string>
+                    <string>94.176.233.93</string>
+                    <string>92.38.152.163</string>
+                    <string>93.115.24.204</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://dns.comss.one/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 15. AdGuard Filt (DE) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.adguard</string>
+            <key>PayloadUUID</key>
+            <string>d6c1e7b5-9a24-4f83-80e2-3b4a5c781f69</string>
+            <key>PayloadDisplayName</key>
+            <string>AdGuard Filt (DE)</string>
+            <key>PayloadDescription</key>
+            <string>AdGuard DNS-over-HTTPS сервер по умолчанию</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>94.140.14.14</string>
+                    <string>94.140.15.15</string>
+    <string>2a10:50c0::ad1:ff</string>
+    <string>2a10:50c0::ad2:ff</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://dns.adguard-dns.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 16. AdGuard Unf (DE) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.adguard-unfiltered</string>
+            <key>PayloadUUID</key>
+            <string>5e9a3d2b-1c74-4f06-8b5a-7c6e1d489f32</string>
+            <key>PayloadDisplayName</key>
+            <string>AdGuard Unf (DE)</string>
+            <key>PayloadDescription</key>
+            <string>AdGuard DNS-over-HTTPS без фильтрации</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://unfiltered.adguard-dns.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 17. Yandex Unfiltered -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.yandex-basic</string>
+            <key>PayloadUUID</key>
+            <string>b3d9c2e7-5a14-4f68-8e01-6c7b1a5f3492</string>
+            <key>PayloadDisplayName</key>
+            <string>Yandex Unfiltered</string>
+            <key>PayloadDescription</key>
+            <string>Яндекс DNS-over-TLS/HTTPS базовый</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://common.dot.dns.yandex.net/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 18. Yandex Filtered -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.yandex-safe</string>
+            <key>PayloadUUID</key>
+            <string>2e5b1c9d-7f46-4a83-8d0a-3b6c9e147f52</string>
+            <key>PayloadDisplayName</key>
+            <string>Yandex Filtered</string>
+            <key>PayloadDescription</key>
+            <string>Яндекс DNS-over-TLS/HTTPS безопасный (фильтрация)</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://safe.dot.dns.yandex.net/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 19. Control D Unf(Private(DE)) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.controld-unfiltered</string>
+            <key>PayloadUUID</key>
+            <string>9c6b4a1d-2f78-4e35-a05b-7e3d8c5f9124</string>
+            <key>PayloadDisplayName</key>
+            <string>Control D Unf (Private, DE)</string>
+            <key>PayloadDescription</key>
+            <string>Control D DNS-over-HTTPS без фильтрации (Канада)</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>76.76.2.0</string>
+                    <string>76.76.10.0</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://freedns.controld.com/p0/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 20. Control D Malw(Private(DE)) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.controld-malware</string>
+            <key>PayloadUUID</key>
+            <string>7b5e9a1c-3d42-4f68-80e7-2c6b9d148a53</string>
+            <key>PayloadDisplayName</key>
+            <string>Control D Malw (Private, DE)</string>
+            <key>PayloadDescription</key>
+            <string>Control D DNS-over-HTTPS с блокировкой вредоносного ПО и рекламы (Канада)</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>76.76.2.2</string>
+                    <string>76.76.10.2</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://freedns.controld.com/p2/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 21. Cloudflare DoH Malware Filter (FL) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.cloudflare-malware</string>
+            <key>PayloadUUID</key>
+            <string>1c4b7d9e-8a35-4f62-ae01-5d3c6b2f9748</string>
+            <key>PayloadDisplayName</key>
+            <string>Cloudflare Malw (FL)</string>
+            <key>PayloadDescription</key>
+            <string>Cloudflare DNS-over-HTTPS с блокировкой вредоносного ПО</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>1.1.1.2</string>
+    <string>1.0.0.2</string>
+    <string>2606:4700:4700::1112</string>
+    <string>2606:4700:4700::1002</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://security.cloudflare-dns.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 22. (Xbox)-DNS -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.xboxdns</string>
+            <key>PayloadUUID</key>
+            <string>e5a1c7d9-2b4f-4638-8d0e-9c6b3a5f1742</string>
+            <key>PayloadDisplayName</key>
+            <string>(Xbox) -DNS</string>
+            <key>PayloadDescription</key>
+            <string>Xbox-DNS DNS-over-HTTPS, доступ к играм и сервисам</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://xbox-dns.ru/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 23. (GPT, DE) dns.malw.link -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.dnsmalwlink</string>
+            <key>PayloadUUID</key>
+            <string>4b2d8c9e-5a17-4f63-a01c-7e3b6d915842</string>
+            <key>PayloadDisplayName</key>
+            <string>(GPT, DE) malw.link</string>
+            <key>PayloadDescription</key>
+            <string>dns.malw.link DNS-over-HTTPS — блокировка рекламы и мусора</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+		<key>ServerAddresses</key>
+		<array>
+		    <string>84.21.189.133</string>
+		</array>
+                <key>ServerURL</key>
+                <string>https://dns.malw.link/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 24. (GPT, FL) Cloudflare Gateway -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.cf-gateway</string>
+            <key>PayloadUUID</key>
+            <string>c9a7e1d5-3b24-4f68-80a2-6d5c9b1e743f</string>
+            <key>PayloadDisplayName</key>
+            <string>(GPT, FL) Cloudflare Gateway</string>
+            <key>PayloadDescription</key>
+            <string>Cloudflare Gateway DNS-over-HTTPS (anycast резолверы + уникальный DoH)</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerAddresses</key>
+                <array>
+		    <string>1.1.1.1</string>
+		    <string>1.0.0.1</string>
+                </array>
+                <key>ServerURL</key>
+                <string>https://5u35p8m9i7.cloudflare-gateway.com/dns-query</string>
+            </dict>
+        </dict>
+
+        <!-- 25. (GPT, RU) AstraCat -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.custom.astracat-malware</string>
+            <key>PayloadUUID</key>
+            <string>6a5c9d2e-1b47-4f83-ae08-7c3d8b915246</string>
+            <key>PayloadDisplayName</key>
+            <string>(Xbox, RU) AstraCat (AI)</string>
+            <key>PayloadDescription</key>
+            <string>AstraCat DNS-over-HTTPS для AI и обхода цензуры</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+<key>ServerAddresses</key>
+<array>
+    <string>178.17.50.15</string>
+    <string>185.112.59.109</string>
+    <string>144.31.14.145</string>
+</array>
+                <key>ServerURL</key>
+                <string>https://dns.astracat.ru/dns-query</string>
+            </dict>
+        </dict>
+
+
+    </array>
+    <key>PayloadDescription</key>
+    <string>Vovkin build DNS-over-HTTPS with 25 servers</string>
+    <key>PayloadDisplayName</key>
+    <string>25 DoH, Vovkin assembly</string>
+    <key>PayloadIdentifier</key>
+    <string>com.custom.doh25.profile</string>
+    <key>PayloadOrganization</key>
+    <string>Konfidentsialnost’ ustroystva</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeffff</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>

@@ -61,7 +61,7 @@ DNS — не VPN. IP-адрес не меняется.
 1. dns.digitale-gesellschaft.ch
 2. dns2.digitale-gesellschaft.ch
 3. dot.libredns.gr
-4. unicast.uncensoreddns.org
+4. unicast.uncensoreddns.org или anycast.uncensoreddns.org
 5. dns.quad9.net
 6. basic.rethinkdns.com
 7. p0.freedns.controld.com
@@ -89,12 +89,12 @@ DNS — не VPN. IP-адрес не меняется.
 3. dns.nextdns.io
 4. 1dot1dot1dot1.cloudflare-dns.com
 5. cloudflare-dns.com
-6. security.cloudflare-dns.com
-7. family.cloudflare-dns.com
-8. dns.adguard-dns.com
-9. unfiltered.adguard-dns.com
-10. common.dot.dns.yandex.net
-11. safe.dot.dns.yandex.net
-12. doh.sb
+6. family.cloudflare-dns.com
+7. security.cloudflare-dns.com
+9. dns.adguard-dns.com
+10. unfiltered.adguard-dns.com
+11. common.dot.dns.yandex.net
+12. safe.dot.dns.yandex.net
+13. doh.sb
 
 
